@@ -67,8 +67,21 @@ void zadanie() {
 
     plikWejsciowy.close();
 
+// Liczenie liczby prawidlowych "plusów"
+    int wynik = liczbaPoprawnychPlusow(macierz);
 
-int main(){
+    // Zapis wyniku do pliku
+    std::ofstream plikWyjsciowy("wynik.txt");
+    if (!plikWyjsciowy) {
+        std::cerr << "Nie mozna otworzyc pliku wynik.txt!" << std::endl;
+        return;
+    }
 
+    plikWyjsciowy << "Liczba prawidlowych plusów: " << wynik << std::endl;
+    plikWyjsciowy.close();
+}
+
+int main() {
+    
     return 0;
 }
