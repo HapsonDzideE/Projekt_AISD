@@ -4,6 +4,7 @@
 
 // Funkcja do sprawdzania, czy dany punkt w tablicy tworzy prawidłowy "plus"
 bool czyPoprawnyPlus(const std::vector<std::vector<int>>& macierz, int w, int k) {
+    
     // Sprawdzenie czy centrum "plusa" jest jedynka
     if (macierz[w][k] != 1) return false;
     
