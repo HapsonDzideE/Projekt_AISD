@@ -27,6 +27,12 @@ bool czyPoprawnyPlus(const std::vector<std::vector<int>>& macierz, int w, int k)
     return true;
 }
 
+// Funkcja do liczenia liczby prawidlowych "plusów" w tablicy
+int liczbaPoprawnychPlusow(const std::vector<std::vector<int>>& macierz) {
+    int w = macierz.size();
+    int k = macierz[0].size();
+    int licznik = 0;
+
 int main(){
 
     return 0;
