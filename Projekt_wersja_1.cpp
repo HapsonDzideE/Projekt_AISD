@@ -82,6 +82,6 @@ void zadanie() {
 }
 
 int main() {
-    
+    zadanie();
     return 0;
 }
