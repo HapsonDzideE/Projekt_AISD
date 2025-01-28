@@ -33,6 +33,19 @@ int liczbaPoprawnychPlusow(const std::vector<std::vector<int>>& macierz) {
     int k = macierz[0].size();
     int licznik = 0;
 
+    // Przechodzi przez wnetrze tablicy (pomija krawedzie)
+    for (int i = 1; i < w - 1; ++i) {
+        for (int j = 1; j < k - 1; ++j) {
+            if (czyPoprawnyPlus(macierz, i, j)) {
+                ++licznik;
+            }
+        }
+    }
+
+    return licznik;
+}
+
+
 int main(){
 
     return 0;
