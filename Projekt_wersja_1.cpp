@@ -80,6 +80,7 @@ void zadanie() {
     }
 
     plikWyjsciowy << "Liczba prawidlowych plusów: " << wynik << std::endl;
+    
     plikWyjsciowy.close();
 }
 
