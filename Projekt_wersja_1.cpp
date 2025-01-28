@@ -45,6 +45,28 @@ int liczbaPoprawnychPlusow(const std::vector<std::vector<int>>& macierz) {
     return licznik;
 }
 
+// Funkcja glówna programu
+void zadanie() {
+    // Odczytuje dane z pliku
+    std::ifstream plikWejsciowy("dane.txt");
+    if (!plikWejsciowy) {
+        std::cerr << "Nie mozna otworzyc pliku dane.txt!" << std::endl;
+        return;
+    }
+
+    int w, k;
+    plikWejsciowy >> w >> k;
+
+    std::vector<std::vector<int>> macierz(w, std::vector<int>(k));
+
+    for (int i = 0; i < w; ++i) {
+        for (int j = 0; j < k; ++j) {
+            plikWejsciowy >> macierz[i][j];
+        }
+    }
+
+    plikWejsciowy.close();
+
 
 int main(){
 
